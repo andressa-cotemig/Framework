@@ -1,5 +1,8 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from './logo.svg';
 import './App.css';
+import { Button } from 'react-bootstrap';
+import Botao from './Componentes/Botao';
 
 function App() {
   return (
@@ -17,6 +20,8 @@ function App() {
         >
           Learn React
         </a>
+        <Button variant="primary">Primary</Button>
+        <Botao>Andressa</Botao>
       </header>
     </div>
   );
