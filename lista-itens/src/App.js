@@ -8,7 +8,11 @@ const lista = [
   { nome: "Arroz", descricao: "branco" },
   { nome: "Feijão", descricao: "marrom" },
   { nome: "Carne", descricao: "vermelha" },
-  { nome: "Salada", descricao: "verde" }]
+  { nome: "Salada", descricao: "verde" }
+];
+
+const Nome = () => <p>Andressa</p>
+const Cotemig = () => <img src="https://fencom.coop.br/wp-content/uploads/2020/01/cotemig-2.jpg" alt="cotemig" />
 
 function App() {
   return (
@@ -19,6 +23,8 @@ function App() {
             <li key={index} onClick={() => click(item.nome, item.descricao)}><button>{item.nome}</button></li>)
         }
       </ul>
+      <Nome />
+      <Cotemig />
     </div>
   );
 }
