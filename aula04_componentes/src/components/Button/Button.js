@@ -12,7 +12,7 @@ export class Button extends React.Component {
 
     render() {
         return (
-            <div className="button-component">
+            <div  style={{ backgroundColor: 'red' }} className="button-component">
                 <div onClick={this.props.onClick ?? (() => this.click())}>{this.props.title}</div>
             </div >
         )
