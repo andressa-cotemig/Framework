@@ -1,8 +1,5 @@
 import React from 'react';
 export class LifeCycle extends React.Component {
-    constructor(props) {
-        super(props);
-    }
     componentDidMount() {
         console.log('Componente montado', this.props)
     }
