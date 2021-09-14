@@ -34,11 +34,11 @@ export default class App extends React.Component {
         <div className="item">
           <Container />
         </div>
-        <div className="item">
+        {/* <div className="item">
           <button onClick={() => this.click()}>Clique aqui</button>
           <button onClick={() => this.removeComponente()}>Remove componente</button>
-          {this.state.lifecyle && <LifeCycle exibicao={this.state.exibe} />}
-        </div>
+          {this.state.lifecyle && <LifeCycle exibicao={this.state.exibe} />} 
+        </div>*/}
       </div>
     );
   }

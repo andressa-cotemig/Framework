@@ -12,11 +12,11 @@ export default class Header extends React.Component {
     }
     getSnapshotBeforeUpdate(prevProps, prevState) {
         document.getElementById("div1").innerHTML =
-            "Before the update, the favorite was " + prevState.favoritecolor;
+            "Antes da atualização, o favorito era " + prevState.favoritecolor;
     }
     componentDidUpdate() {
         document.getElementById("div2").innerHTML =
-            "The updated favorite is " + this.state.favoritecolor;
+            "O favorito atualizado é " + this.state.favoritecolor;
     }
     render() {
         return (
