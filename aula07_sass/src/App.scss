@@ -1,0 +1,15 @@
+@import "Style";
+
+div {
+  display: flex;
+  background-color: $cor-padrao;
+  font-family: $fontes;
+
+  .borda {
+    border: 1px solid pink;
+  }
+
+  .App-header {
+    @extend .borda
+  }
+}

@@ -1,0 +1,27 @@
+@import "../Base.scss";
+
+#jornal {
+    display: flex;
+    flex-direction: column;
+
+    #esporte {
+        background-color: $esporteClaro;
+    }
+    #novela {
+        background-color: $novelaClaro;
+    }
+    #saude {
+        background-color: $saudeClaro;
+    }
+
+    .sessao {
+        display: flex;
+        flex-direction: column;
+
+        .noticias {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+}
