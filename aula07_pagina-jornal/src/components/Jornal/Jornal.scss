@@ -1,27 +1,60 @@
 @import "../Base.scss";
 
-#jornal {
+.App {
     display: flex;
-    flex-direction: column;
-
-    #esporte {
-        background-color: $esporteClaro;
-    }
-    #novela {
-        background-color: $novelaClaro;
-    }
-    #saude {
-        background-color: $saudeClaro;
-    }
-
-    .sessao {
+    height: 100%;
+    #jornal {
+        background-color: darkgray;
         display: flex;
         flex-direction: column;
-
-        .noticias {
+        width: 1100%;
+        #titulo{
+            height: 10%;
+        }
+        #container {
             display: flex;
-            width: 100%;
-            justify-content: center;
+            flex-direction: row;
+            height: 90%;
+            #painel-leitura {
+                display: flex;
+                width: 40%;
+                justify-content: center;
+            }
+
+            #noticias {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+
+                #sessoes {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                }
+
+                #esporte {
+                    background-color: $esporteClaro;
+                }
+                #novela {
+                    background-color: $novelaClaro;
+                }
+                #saude {
+                    background-color: $saudeClaro;
+                }
+
+                .sessao {
+                    display: flex;
+                    flex-direction: column;
+
+                    .noticias {
+                        display: flex;
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
         }
     }
 }

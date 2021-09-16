@@ -1,13 +1,18 @@
 import React from 'react';
 
 export default class Botao extends React.Component {
-
     render() {
-        const { texto, onClick } = this.props;
+        const { children, onClick, link } = this.props;
+        
         return (
             <div>
-                <button onClick={onClick}>{texto}</button>
+                {
+                    link ?
+                        <button><a href={link}>{children}</a></button>
+                        :
+                        <button onClick={onClick}>{children}</button>
+                }
             </div>
-        );
+        )
     }
 }

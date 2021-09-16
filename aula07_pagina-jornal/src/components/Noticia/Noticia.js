@@ -7,13 +7,14 @@ import Botao from '../Botao/Botao';
 export default class Noticia extends React.Component {
 
     render() {
-        const { titulo, descricao, img } = this.props;
+        const { titulo, descricao, img, onClick, link, botao } = this.props;
+        
         return (
             <div>
                 <Titulo texto={titulo} />
                 <Imagem img={img} />
                 <Descricao texto={descricao} />
-                <Botao texto='Ver Mais' />
+                <Botao onClick={onClick} link={link}>{botao}</Botao>
             </div>
         );
     }
