@@ -12,6 +12,7 @@ export default class Jornal extends React.Component {
             lerTitulo: '',
             lerDescricao: '',
             lerLink: '',
+            lerImg: ''
         }
     }
 
@@ -20,6 +21,7 @@ export default class Jornal extends React.Component {
             lerTitulo: noticia.titulo,
             lerDescricao: noticia.descricao,
             lerLink: noticia.link,
+            lerImg: noticia.img
         })
     }
 
@@ -89,9 +91,7 @@ export default class Jornal extends React.Component {
             ]
         };
 
-        const { lerTitulo, lerDescricao, lerLink } = this.state;
-
-        console.log({ lerTitulo, lerDescricao, lerLink })
+        const { lerTitulo, lerDescricao, lerLink, lerImg } = this.state;
 
         return (
             <div id='jornal'>
@@ -156,7 +156,12 @@ export default class Jornal extends React.Component {
                     </div>
 
                     <div id="painel-leitura">
-                        <PainelLeitura titulo={lerTitulo} descricao={lerDescricao} link={lerLink} />
+                        <PainelLeitura
+                            img={lerImg}
+                            titulo={lerTitulo}
+                            descricao={lerDescricao}
+                            link={lerLink}
+                        />
                     </div>
                 </div>
             </div>
