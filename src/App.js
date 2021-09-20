@@ -1,14 +1,14 @@
 //import './App.css';
 
-// import Aula01 from "./aulas/aula01_elementos/Aula01";
-// import Aula02 from "./aulas/aula02_lista-itens/Aula02";
-// import Aula03 from "./aulas/aula03_bootstrap/Aula03";
-// import Aula04 from "./aulas/aula04_componentes/Aula04";
-// import Aula05 from "./aulas/aula05_state/Aula05";
-// import Aula06 from "./aulas/aula06_imc/Aula06";
-// import Aula07 from "./aulas/aula07_lifecycle/Aula07";
-// import Aula08 from "./aulas/aula08_sass/Aula08";
-import Aula09 from "./aulas/aula09/Aula09";
+// import Aula01 from "./aula01_elementos/Aula01";
+// import Aula02 from "./aula02_lista-itens/Aula02";
+// import Aula03 from "./aula03_bootstrap/Aula03";
+// import Aula04 from "./aula04_componentes/Aula04";
+// import Aula05 from "./aula05_state/Aula05";
+// import Aula06 from "./aula06_imc/Aula06";
+// import Aula07 from "./aula07_lifecycle/Aula07";
+// import Aula08 from "./aula08_sass/Aula08";
+import Aula09 from "./aula09_consumir-api/Aula09";
 
 //  npm i -g create-react-app           instalação
 //  npx create-react-app my-app         criar novo projeto
@@ -17,7 +17,7 @@ function App() {
   return (
     <div>
       <Aula09 />
-      {/* 
+      {/*
       <Aula08 />
       <Aula07 />
       <Aula07 />
