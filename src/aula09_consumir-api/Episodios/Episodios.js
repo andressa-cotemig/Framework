@@ -15,6 +15,9 @@ export default class Episodios extends React.Component {
                 this.setState({
                     episodios: res
                 });
+            })
+            .catch((err) => {
+                console.error("ops! ocorreu um erro: " + err);
             });
     }
 
@@ -36,3 +39,4 @@ export default class Episodios extends React.Component {
         );
     }
 }
+

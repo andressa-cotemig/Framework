@@ -12,11 +12,10 @@ export default class Aula10 extends React.Component {
   }
 
   componentDidMount() {
-    api
-      .get("/digimon")
+    api.get("/digimon")
       .then((response) => this.setDigimons(response.data))
       .catch((err) => {
-        console.error("ops! ocorreu um erro" + err);
+        console.error("ops! ocorreu um erro: " + err);
       });
   }
 
