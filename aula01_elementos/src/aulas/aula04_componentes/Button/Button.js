@@ -2,10 +2,6 @@ import React from 'react';
 import './Button.css'
 
 export class Button extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
     click() {
         console.log('clicou no botão')
     }

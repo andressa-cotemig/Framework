@@ -1,75 +1,35 @@
 //import './App.css';
 
+// import Aula01 from "./aulas/aula01_elementos/Aula01";
+// import Aula02 from "./aulas/aula02_lista-itens/Aula02";
+// import Aula03 from "./aulas/aula03_bootstrap/Aula03";
+// import Aula04 from "./aulas/aula04_componentes/Aula04";
+// import Aula05 from "./aulas/aula05_state/Aula05";
+// import Aula06 from "./aulas/aula06_imc/Aula06";
+// import Aula07 from "./aulas/aula07_lifecycle/Aula07";
+// import Aula08 from "./aulas/aula08_sass/Aula08";
+import Aula09 from "./aulas/aula09/Aula09";
+
 //  npm i -g create-react-app           instalação
 //  npx create-react-app my-app         criar novo projeto
 
-const titulo2 = "Meu titulo 2";
-
-const Elemento1 = () => <h1>Elemento 1</h1>
-const Elemento2 = () => <Elemento1 />
-const Elemento3 = (props) => <h1>{props.andressa}</h1>
-
-function Elemento4(props) {
-  const { color, text } = props;
-  return (
-    <div style={{ backgroundColor: color }}>
-      {text}
-    </div>
-  )
-}
-
-function Elemento5(props) {
-  return (
-    <div style={{ backgroundColor: 'yellow' }}>
-      {props.children}
-    </div>
-  )
-}
-
-const click = (item) => {
-  return console.log("clicou no", item)
-}
-
-const lista = ["item1", "item2", "item3", "item4"]
-
 function App() {
-  const prof = "Professora 2"
-  const teste = true;
   return (
-    <div className="App">
-      <h1>{titulo2}</h1>
-      <Elemento2 />
-      <Elemento3 andressa={teste ? prof : 'erro'} title={"Cotemig"} title2={"Cotemig2"} />
-      <Elemento4 color="green" text="Elemento4 1 novo" />
-      <Elemento4 color="red" text="Elemento4 2 novo" />
-      <Elemento4 color="blue" text="Elemento4 3 novo" />
-
-      <Elemento5>
-        <div>
-          <h1>Elemento 5</h1>
-          <h2>Elemento 5.1</h2>
-        </div>
-      </Elemento5>
-
-      <Elemento5>
-        <div>
-          <h1>Elemento 55</h1>
-          <h2>Elemento 55.1</h2>
-        </div>
-      </Elemento5>
-
-      <div onClick={click}>
-        <h1>clique</h1>
-      </div>
-
-      <ul>
-        {
-          lista.map((item, index) =>
-            <li key={index} onClick={() => click(item)}>{item}</li>)
-        }
-      </ul>
+    <div>
+      <Aula09 />
+      {/* 
+      <Aula08 />
+      <Aula07 />
+      <Aula07 />
+      <Aula06 />
+      <Aula05 />
+      <Aula04 />
+      <Aula03 />
+      <Aula02 />
+      <Aula01 /> 
+      */}
     </div>
-  );
+  )
 }
 
 export default App;
