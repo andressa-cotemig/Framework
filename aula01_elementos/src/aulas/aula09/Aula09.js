@@ -22,15 +22,17 @@ export default class Aula09 extends React.Component {
   renderConteudo(aba) {
     switch (aba) {
       case 1:
-          return <Sobre />
+        return <Sobre />
       case 2:
-          return <Episodios />
+        return <Episodios />
       case 3:
         return <Personagens />
       case 4:
         return <Mortes />
       case 5:
         return <Frases />
+      default:
+        return null;
     }
   }
 
