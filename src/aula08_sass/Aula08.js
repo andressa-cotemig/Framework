@@ -1,16 +1,12 @@
 import './Aula08.scss';
-import Jornal from './Jornal/Jornal';
+//  import Jornal from './Jornal/Jornal';
+import Galeria from './Galeria/Galeria';
 
 function Aula08() {
   return (
     <div className="Aula08">
-      <Jornal />
-      <p className="Aula08-header">
-        React
-      </p>
-      <p className="Aula08-header">
-        Sass
-      </p>
+      <Galeria />
+      {/* <Jornal /> */}
     </div>
   );
 }

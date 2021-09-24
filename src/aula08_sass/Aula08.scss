@@ -1,8 +1,13 @@
 @import "Style";
 
+.Aula08{
+  width: 100%;
+  flex-direction: column;
+}
+
 div {
   display: flex;
-  background-color: $cor-padrao;
+  //background-color: $cor-padrao;
   font-family: $fontes;
 
   .borda {
