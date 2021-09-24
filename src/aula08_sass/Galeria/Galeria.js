@@ -2,7 +2,6 @@
 import React from 'react';
 import Imagem from './Imagem/Imagem';
 import Titulo from './Titulo/Titulo';
-import PainelVisualizacao from './PainelVisualizacao/PainelVisualizacao';
 import './Galeria.scss'
 
 export default class Galeria extends React.Component {
