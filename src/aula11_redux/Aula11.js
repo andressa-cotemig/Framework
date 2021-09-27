@@ -1,12 +1,12 @@
 import React from 'react';
-//import api from '../infra/api';
 import './Aula11.scss'
 import { Nome } from './Nome';
+import { AlteraNome } from './AlteraNome';
 
 export default class Aula11 extends React.Component {
   constructor(props) {
     super(props)
-    this.state = { inputValue: '', }
+    this.state = { inputValue: '' }
   }
 
   inputChange = event => {
@@ -31,6 +31,7 @@ export default class Aula11 extends React.Component {
         </button>
         <h1>{newValue}</h1>
         <Nome />
+        <AlteraNome />
       </div>
     );
   }
