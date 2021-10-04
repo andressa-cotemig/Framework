@@ -8,7 +8,9 @@
 // import Aula06 from "./aula06_imc/Aula06";
 // import Aula07 from "./aula07_lifecycle/Aula07";
 // import Aula08 from "./aula08_sass/Aula08";
-import Aula09 from "./aula09_consumir-api/Aula09";
+// import Aula09 from "./aula09_consumir-api/Aula09";
+// import Aula10 from "./aula10_consumir-api-axios/Aula10";
+import Aula11 from "./aula11_redux/Aula11";
 
 //  npm i -g create-react-app           instalação
 //  npx create-react-app my-app         criar novo projeto
@@ -16,8 +18,10 @@ import Aula09 from "./aula09_consumir-api/Aula09";
 function App() {
   return (
     <div>
-      <Aula09/>
+      <Aula11 />
       {/*
+      <Aula11 />
+      <Aula10 />
       <Aula09 />
       <Aula08 />
       <Aula07 />
