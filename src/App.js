@@ -1,4 +1,4 @@
-//import './App.css';
+import './App.css';
 
 // import Aula01 from "./aula01_elementos/Aula01";
 // import Aula02 from "./aula02_lista-itens/Aula02";
@@ -10,7 +10,8 @@
 // import Aula08 from "./aula08_sass/Aula08";
 // import Aula09 from "./aula09_consumir-api/Aula09";
 // import Aula10 from "./aula10_consumir-api-axios/Aula10";
-import { Aula11 } from "./aula11_redux/index";
+import { Aula11 } from "./aula11_redux";
+// import Aula12 from "./aula12_routes/Aula12";
 
 //  npm i -g create-react-app           instalação
 //  npx create-react-app my-app         criar novo projeto
@@ -20,6 +21,7 @@ function App() {
     <div>
       <Aula11 />
       {/*
+      <Aula12 />
       <Aula11 />
       <Aula10 />
       <Aula09 />
