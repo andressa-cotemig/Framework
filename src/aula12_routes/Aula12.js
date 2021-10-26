@@ -13,14 +13,14 @@ import Aula08 from '../aula08_sass/Aula08';
 import Aula09 from '../aula09_consumir-api/Aula09';
 import Aula10 from '../aula10_consumir-api-axios/Aula10';
 import { Aula11 } from '../aula11_redux';
-import Menu from "./Menu/Menu";
+// import Menu from "./Menu/Menu";
 
 const Routes = () => {
   return (
     <div className="rotas">
       <BrowserRouter>
-        <Menu />
-        <Route path="/" exact={true} component={Aula01} />
+        {/* <Menu /> */}
+        <Route path="/" component={Aula01} />
         <Route path="/Aula01" component={Aula01} />
         <Route path="/Aula02" component={Aula02} />
         <Route path="/Aula03" component={Aula03} />
