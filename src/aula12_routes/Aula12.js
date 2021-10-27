@@ -13,6 +13,7 @@ import Aula08 from '../aula08_sass/Aula08';
 import Aula09 from '../aula09_consumir-api/Aula09';
 import Aula10 from '../aula10_consumir-api-axios/Aula10';
 import { Aula11 } from '../aula11_redux';
+import Aula13 from '../aula13_hooks/Aula13';
 // import Menu from "./Menu/Menu";
 
 const Routes = () => {
@@ -32,6 +33,7 @@ const Routes = () => {
         <Route path="/Aula09" component={Aula09} />
         <Route path="/Aula10" component={Aula10} />
         <Route path="/Aula11" component={Aula11} />
+        <Route path="/Aula13" component={Aula13} />
       </BrowserRouter>
     </div>
   )
