@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Aula13.scss'
-// import Contadores from './Contadores';
+import Contadores from './Contadores';
 
 export default function Aula13() {
     // Declara uma nova variável de state, que chamaremos de "count"
@@ -10,11 +10,11 @@ export default function Aula13() {
     useEffect(() => {
         // Atualiza o titulo do documento usando a API do browser
         document.title = `Você clicou ${count} vezes`;
-    });
+    }, [count]);
 
     return (
         <div className="Aula13">
-            {/* <Contadores /> */}
+            <Contadores />
             <p>Quantidade de cliques: {count}</p>
             <button onClick={() => setCount(count + 1)}>
                 Clique aqui
