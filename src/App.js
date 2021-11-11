@@ -12,8 +12,8 @@ import './App.css';
 // import Aula10 from "./aula10_consumir-api-axios/Aula10";
 // import { Aula11 } from "./aula11_redux";
 // import { DigimonsRedux } from './aula11_redux/Digimon'
-// import Aula12 from "./aula12_routes/Aula12";
-import Aula13 from './aula13_hooks/Aula13'
+import Aula12 from "./aula12_routes/Aula12";
+// import Aula13 from './aula13_hooks/Aula13'
 
 //  npm i -g create-react-app           instalação
 //  npx create-react-app my-app         criar novo projeto
@@ -21,7 +21,7 @@ import Aula13 from './aula13_hooks/Aula13'
 function App() {
   return (
     <div>
-      <Aula13 />
+      <Aula12 />
       {/*
       <Aula13 />
       <Aula12 />
